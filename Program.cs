@@ -69,32 +69,53 @@ namespace TestProgram
         }
     }
 
+    public class Square : IFigure 
+    {
+        public double[] Sides = new double[2];
+
+        public double GetArea() // Площадь квадрата
+        {
+            return Sides[0] * Sides[1];
+        }
+
+        public Square(double[] Sides)
+        {
+            if(Sides[0] <= 0 || Sides[1] <= 0) throw new ArgumentException("Сторона должна быть больше 0"); // Если сторона меньше или равна 0
+
+            this.Sides = Sides;
+        }
+    }
+
     public class FigureFacility 
     {
         public static double GetUnknownFigureArea(params double[] arguments) // Получить площадь фигуры
         {
-            if(arguments.Length == 3) // Если переданы три аргумента то это треугольник
+            switch (arguments.Length)
             {
-                return new Triangle(arguments).GetArea();
+                case 1:
+                    return new Circle(arguments.First()).GetArea(); // Если передан один аргумент - это радиус круга
+                case 2:
+                    return new Square(arguments).GetArea(); // Если переданы два аргумента - это стороны квадрата
+                case 3:
+                    return new Triangle(arguments).GetArea(); // Если переданы три аргумента - это стороны треугольника
+                default:
+                    throw new ArgumentException("Неверное количество аргументов"); // Если передано неверное количество аргументов
             }
-            else if(arguments.Length == 1) // Если передан один аргумент то это круг
-            {
-                return new Circle(arguments.First()).GetArea();
-            }
-            else throw new ArgumentException("Неверное количество аргументов"); // Если передано неверное количество аргументов
         }
-        
+
         public static IFigure GetUnknownFigureObject(params double[] arguments)
         {
-            if(arguments.Length == 3) // Если переданы три аргумента то это треугольник
+            switch (arguments.Length)
             {
-                return new Triangle(arguments);
+                case 1:
+                    return new Circle(arguments.First()); // Если передан один аргумент - это радиус круга
+                case 2:
+                    return new Square(arguments); // Если переданы два аргумента - это стороны квадрата
+                case 3:
+                    return new Triangle(arguments); // Если переданы три аргумента - это стороны треугольника
+                default:
+                    throw new ArgumentException("Неверное количество аргументов"); // Если передано неверное количество аргументов
             }
-            else if(arguments.Length == 1) // Если передан один аргумент то это круг
-            {
-                return new Circle(arguments.First());
-            }
-            else throw new ArgumentException("Неверное количество аргументов"); // Если передано неверное количество аргументов
         }
     }
 
