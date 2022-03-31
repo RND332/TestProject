@@ -27,7 +27,17 @@ Console.WriteLine(Figure.GetArea()); // 12.566371 area of circle
 
 ```csharp 
 var Figure = FigureFacility.GetUnknownFigureObject(2, 3, 4);
-Console.WriteLine(Figure.GetArea()); // 6 area of Triangle
+Console.WriteLine(Figure.GetArea()); // 6 area of triangle
+```
+
+```csharp 
+var Figure = FigureFacility.GetUnknownFigureArea(2);
+Console.WriteLine(Figure); // 12.566371 area of circle
+```
+
+```csharp 
+var Figure = FigureFacility.GetUnknownFigureArea(2, 3, 4);
+Console.WriteLine(Figure); // 6 area of triangle
 ```
 
 ## interface IFigure
