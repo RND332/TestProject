@@ -2,7 +2,7 @@
 
 namespace TestProgram
 {
-    public class Circle
+    public class Circle : IFigure
     {
         public double Raidius { get; private set; }
 
@@ -19,7 +19,7 @@ namespace TestProgram
         }
     }
 
-    public class Triangle
+    public class Triangle : IFigure
     {
         public double[] Sides = new double[3];
         public double[] Corners = new double[3];
