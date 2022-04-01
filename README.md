@@ -56,4 +56,44 @@ class Square : IFigure
 }
 ```
 # Testes
-`dotnet test`
+Run testes with `dotnet test`
+## List of testes: 
+>TestCircle - `circle functions testes`
+>>TestCircleArea - `checking the correctness of calculations for the area of the circle`
+>>
+>>TestWrongCircleAreaLowerZero - `checking exception raidus <= 0`
+>>
+>>TestWrongCircleAreaZero - `checking exceptions raidus <= 0`
+--------------------------
+>TestTriangle - `triangle functions testes`
+>>TestTriangleArea - `checking the correctness of calculations for the area of the triangle`
+>>
+>>TestWrongTriangleAreaLowerZero - `checking exception a, b or c <= 0`
+>>
+>>TestWrongTriangleAreaZero - `checking exception a, b or c <= 0`
+>>
+>>TestRectangularTriangle - `checking correction recognition of right triangles`
+>>
+>>TestCorners - `checking the correctness of the calculation of the angles of the triangle`
+--------------------------
+>TestSquare - `square functions testes`
+>>
+>>TestSquareArea - `checking the correctness of calculations for the area of the square`
+>>
+>>TestWrongSquareAreaLowerZero - `checking exception a <= 0`
+>>
+>>TestWrongSquareAreaZero - `checking exception a <= 0`
+--------------------------
+>TestFigureFacility - `FigureFacility functions testes`
+>>
+>>TestFigureFacilityGetUnknownFigureArea - `checking the correctness of the calculation of the angles of the triangle`
+>>
+>>TestWrongFigureFacilityGetUnknownFigureArea - `checking exception leight of arguments <= 0 or > 3`
+>>
+>>TestFigureFacilityGetUnknownFigureObjectCircle - `checking whether the factory returns a circle if the number of arguments is 2`
+>>
+>>TestFigureFacilityGetUnknownFigureObjectSquare - `checking whether the factory returns a square if the number of arguments is 2`
+>>
+>>TestFigureFacilityGetUnknownFigureObjectTriangle - `checking whether the factory returns a triangle if the number of arguments is 3`
+>>
+>>TestWrongFigureFacilityGetUnknownFigureObject - `checking exception leight of arguments <= 0 or > 3`
