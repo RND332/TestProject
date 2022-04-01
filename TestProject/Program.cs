@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TestProgram
+﻿namespace TestProgram
 {
     public class Circle : IFigure
     {

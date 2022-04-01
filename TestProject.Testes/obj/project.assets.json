@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "FiguresLibary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FiguresLibary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FiguresLibary.dll": {}
+        }
       }
     }
   },
@@ -5962,10 +5972,16 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "FiguresLibary/1.0.0": {
+      "type": "project",
+      "path": "../FiguresLibary/FiguresLibary.csproj",
+      "msbuildProject": "../FiguresLibary/FiguresLibary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FiguresLibary >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
@@ -6003,7 +6019,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\eureq\\source\\repos\\TestProject\\FiguresLibary\\FiguresLibary.csproj": {
+              "projectPath": "C:\\Users\\eureq\\source\\repos\\TestProject\\FiguresLibary\\FiguresLibary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
