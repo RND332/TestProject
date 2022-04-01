@@ -10,7 +10,7 @@ namespace TestProject.Testes
         public void TestCircleArea()
         {
             var circle = new Circle(2);
-            Assert.Equal(12.566370614359172, circle.GetArea());
+            Assert.Equal(12.57, Math.Round(circle.GetArea(), 2));
         }
 
         [Fact]
@@ -27,7 +27,7 @@ namespace TestProject.Testes
             Assert.Equal("Радиус должен быть больше 0", exception.Message);
         }
     }
-    public class TriangleTestes 
+    public class TestTriangle 
     {
         [Fact]
         public void TestTriangleArea()
