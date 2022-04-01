@@ -55,3 +55,5 @@ class Square : IFigure
   }
 }
 ```
+# Testes
+`dotnet test`
