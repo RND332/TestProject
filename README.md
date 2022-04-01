@@ -86,14 +86,14 @@ Run testes with `dotnet test`
 --------------------------
 >TestFigureFacility - `FigureFacility functions testes`
 >>
->>TestFigureFacilityGetUnknownFigureArea - `checking the correctness of the calculation of the angles of the triangle`
+>>TestFigureFacilityGetUnknownFigureArea - `checking the correctness of the calculation of the angles of the triangle`  
 >>
->>TestWrongFigureFacilityGetUnknownFigureArea - `checking exception leight of arguments <= 0 or > 3`
+>>TestWrongFigureFacilityGetUnknownFigureArea - `checking exception leight of arguments <= 0 or > 3`  
 >>
->>TestFigureFacilityGetUnknownFigureObjectCircle - `checking whether the factory returns a circle if the number of arguments is 2`
+>>TestFigureFacilityGetUnknownFigureObjectCircle - `checking whether the factory returns a circle if the number of arguments is 2`  
 >>
->>TestFigureFacilityGetUnknownFigureObjectSquare - `checking whether the factory returns a square if the number of arguments is 2`
+>>TestFigureFacilityGetUnknownFigureObjectSquare - `checking whether the factory returns a square if the number of arguments is 2`  
 >>
->>TestFigureFacilityGetUnknownFigureObjectTriangle - `checking whether the factory returns a triangle if the number of arguments is 3`
+>>TestFigureFacilityGetUnknownFigureObjectTriangle - `checking whether the factory returns a triangle if the number of arguments is 3`  
 >>
->>TestWrongFigureFacilityGetUnknownFigureObject - `checking exception leight of arguments <= 0 or > 3`
+>>TestWrongFigureFacilityGetUnknownFigureObject - `checking exception leight of arguments <= 0 or > 3`  
