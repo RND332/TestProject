@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject\\TestProject.csproj": {}
+    "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject.Testes\\TestProject.Testes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject\\TestProject.csproj": {
+    "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject.Testes\\TestProject.Testes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject\\TestProject.csproj",
-        "projectName": "TestProject",
-        "projectPath": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject.Testes\\TestProject.Testes.csproj",
+        "projectName": "TestProject.Testes",
+        "projectPath": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject.Testes\\TestProject.Testes.csproj",
         "packagesPath": "C:\\Users\\eureq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject\\obj\\",
+        "outputPath": "C:\\Users\\eureq\\source\\repos\\TestProject\\TestProject.Testes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
